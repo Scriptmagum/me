@@ -13,45 +13,36 @@
             padding: 0;
             margin: 0;
         }
-body{
- background-color: rgba(0, 0, 0);
+        body {
+            background-color: rgba(0, 0, 0);
             background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(assets/bg.jpg);
             background-size: cover;
             background-position: center;
-            background-attachment:fixed;
-
-}
+            background-attachment: fixed;
+        }
         #particles-js {
+            position:relative;
+            z-index:-1;
             width: 100%;
             height: 100vh;
-  
         }
         .container {
-            position:absolute;
-            left:50%;
-            top:14%;
+            position: absolute;
+            left: 50%;
+            top: 14%;
             transform: translate(-50%, 0%);
-           
             color: white;
             text-align: center;
-           
         }
-       
-        #blk2{
-            padding-left:20px;
-           
-           
+        #blk2 {
+            padding-left: 20px;
         }
-        #blk1{
-            
-            padding-left:20px;
-           
+        #blk1 {
+            padding-left: 20px;
         }
-        .me{
-          
-           margin-top: 40px;
+        .me {
+            margin-top: 40px;
         }
-       
         .profile-img {
             max-width: 150px;
             border-radius: 50%;
@@ -67,55 +58,92 @@ body{
             color: #ddd;
         }
         footer {
-    margin-top: 30px;
-    background-color:rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    
-}
-
+            margin-top: 30px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+        }
         .footer-title {
             margin-bottom: 10px;
             font-size: 18px;
             font-weight: bold;
         }
+        /* Style personnalisé pour la navbar */
+        .navbar-dark.bg-dark {
+            background-color:#25292A !important;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #39F0EC;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            letter-spacing: 2px;
+        }
+        .navbar-brand:hover {
+            color: #29b9c1;
+        }
+        .navbar-item{
+            font-weight: bold;
+            padding: 15px;
+        }
+        .navbar-item:hover {
+            color: #29b9c1;
+        }
     </style>
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#" style="color:#39F0EC;">Zh3_gh05t</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Whoami">About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html" target="_blank">My Projects</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
     <div id="particles-js">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-xs-12" id="blk1">
-            <img src="assets/profil.jpg" alt="Profile Picture" class="profile-img">
-            <h3>zh3_ghost</h3>
-            <h6 style="font-weight: 200;">Cybersecurity student | CTF player | Competitive programming player</h6>
-        </div>
-        <div class="col-md-6 col-xs-12" id="blk2">
-            <div class="me">
-           <h3>Whoami</h3>
-           <p>Étudiant en cybersécurité, joueur de CTF et programmeur compétitif, je combine passion pour la sécurité informatique et compétences en résolution de problèmes. J'aime relever des défis complexes et m'engage à exceller dans ces domaines.</p>
-    </div>
-        </div>
-        </div>
-    </div>
-    </div>
-        <footer>
-            <div class="footer-title">Find me on</div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/ridiwane-mama-toure-8ba296272/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Scriptmagum" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://tryhackme.com/p/Zh3gh05t" target="_blank" title="TryHackMe"><img src="assets/tryhack.png" alt="TryHackMe" style="width: 24px; height: 24px;"></a>
-        <a href="https://ctf.hackthebox.com/user/profile/428656" target="_blank" title="Hack The Box"><img src="assets/hack.jfif" alt="Hack The Box" style="width: 24px; height: 24px;"></a>
-        <a href="https://www.codingame.com/profile/ba461ad464ecc297f9a0569068755ff75999475" target="_blank" title="CodinGame"><img src="assets/code.jfif" alt="CodinGame" style="width: 24px; height: 24px;"></a>
+                    <img src="assets/profil.jpg" alt="Profile Picture" class="profile-img">
+                    <h6 style="font-weight: 200;">Ridiwane MAMA TOURE</h6>
+                </div>
+                <div class="col-md-6 col-xs-12" id="blk2">
+                    <div class="me" id="Whoami">
+                        <h3>Whoami</h3>
+                        <h6 style="font-weight: 200; margin-bottom: 14px;">Cybersecurity student | CTF player | Competitive programming player</h6>
+                        <p style="font-weight:100">Étudiant en cybersécurité, joueur de CTF et programmeur compétitif, je combine passion pour la sécurité informatique et compétences en résolution de problèmes. J'aime relever des défis complexes et m'engage à exceller dans ces domaines.</p>
+                    </div>
+                </div>
             </div>
-            <p style="font-weight: 100;font-style: italic;">Knowledge should be free.
-            Just learn, make, and share. </p>
-        </footer>
-        <script src="scripts/particles.js"></script>
-        <script src="scripts/app.js"></script>
-   
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-title">Find me on</div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ridiwane-mama-toure-8ba296272/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Scriptmagum" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://tryhackme.com/p/Zh3gh05t" target="_blank" title="TryHackMe"><img src="assets/tryhack.png" alt="TryHackMe" style="width: 24px; height: 24px;"></a>
+            <a href="https://ctf.hackthebox.com/user/profile/428656" target="_blank" title="Hack The Box"><img src="assets/hack.jfif" alt="Hack The Box" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.codingame.com/profile/ba461ad464ecc297f9a0569068755ff75999475" target="_blank" title="CodinGame"><img src="assets/code.jfif" alt="CodinGame" style="width: 24px; height: 24px;"></a>
+        </div>
+        <p style="font-weight: 100; font-style: italic;">Knowledge should be free. Just learn, make, and share.</p>
+    </footer>
+
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/app.js"></script>
+
 </body>
-
-
 </html>
