@@ -18,7 +18,6 @@ body{
             background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(assets/bg.jpg);
             background-size: cover;
             background-position: center;
-            position: relative;
             background-attachment:fixed;
 
 }
@@ -27,15 +26,33 @@ body{
             height: 100vh;
   
         }
-        .content {
+        .container {
             position:absolute;
-            top:30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            left:50%;
+            top:14%;
+            transform: translate(-50%, 0%);
+           
             color: white;
             text-align: center;
            
         }
+       
+        #blk2{
+            padding-left:20px;
+           
+           
+        }
+        #blk1{
+            
+            padding-left:20px;
+           
+        }
+        .me{
+          
+           margin-left: 20px;
+           margin-top: 30px;
+        }
+       
         .profile-img {
             max-width: 150px;
             border-radius: 50%;
@@ -69,13 +86,22 @@ body{
 <body>
 
     <div id="particles-js">
-        <div class="content">
-           
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12" id="blk1">
             <img src="assets/profil.jpg" alt="Profile Picture" class="profile-img">
-            
             <h3>zh3_ghost</h3>
             <h6 style="font-weight: 200;">Cybersecurity student | CTF player | Competitive programming player</h6>
         </div>
+        <div class="col-md-6 col-xs-12" id="blk2">
+            <div class="me">
+           <h3>Whoami</h3>
+           <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla vitae efficitur elementum, sapien ligula auctor tortor, at viverra eros arcu at arcu. Sed non ipsum sed felis dictum cursus. Praesent facilisis mauris ut ligula euismod, vel blandit est malesuada. Nulla facilisi. Curabitur vestibulum turpis quis bibendum fermentum. Quisque maximus tellus sit amet urna fringilla, ac viverra felis ultricies. Sed in enim a dolor tristique consequat. Morbi et vestibulum turpis. Vivamus vel velit vitae turpis vehicula facilisis.</p>
+        </p>
+    </div>
+        </div>
+        </div>
+    </div>
     </div>
         <footer>
             <div class="footer-title">Find me on</div>
